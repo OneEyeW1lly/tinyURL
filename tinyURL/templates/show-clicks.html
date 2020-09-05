@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tinyURL - URL Shortener</title>
+    <style>
+        footer {
+            color: #fff;
+            text-align: center;
+            margin: 30vh 0 5vh;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: robot mono,monospace;
+        }
+
+        body {
+            background: black;
+        }
+
+        #footer {
+            font-size: 16px;
+            font-weight: 200;
+        }
+
+        #content {
+            font-size: 16px;
+            font-weight: 200;
+        }
+
+        #header {
+            width: 100%;
+            height: 70px;
+            display: block;
+            background-color: black;
+        }
+        
+        #inner_header {
+            width: 1000px;
+            height: 100%;
+            display: block;
+            margin: 0 auto;
+        }
+        
+        #logo_container {
+            height: 100%;
+            display: table;
+            float: left;
+        }
+        
+        #logo_container h1 {
+            color: white;
+            height: 100%;
+            flex: 1;
+            display: table-cell;
+            vertical-align: middle;
+            font-family: robot mono,monospace;
+            font-size: 23px;
+            font-weight: 600;
+        }
+
+        #nav {
+            float: right;
+            height: 100%;
+        }
+
+        #nav a {
+            height: 100%;
+            display: table;
+            float: left;
+            padding: 0px 20px;
+            text-decoration: none;
+        }
+
+        #nav a li {
+            display: table-cell;
+            height: 100%;
+            color:  white;
+            font-family: robot mono,monospace;
+            font-size: 18px;
+            vertical-align: middle;
+            text-decoration: none;
+        }
+
+        .clicks {
+            color: purple;
+            text-align: center;
+            margin-top: 20vh;
+        }
+
+        .clicks h1 {
+            font-size: 125px;
+        }
+
+        .clicks h2 {
+            font-size: 25px;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="header">
+            <div id="inner_header">
+                <div id="logo_container">
+                    <h1>tinyURL - URL Shortener</h1>
+                </div>
+            
+                <ul id="nav">
+                    <a href="/"><li>Home</li></a>
+                    <a href="/lookup"><li>Lookup</li></a>
+                    <a href="/clicks"><li>Tracker</li></a>
+                </ul>
+            </div>
+        </div>
+        <div id="content">
+            <div class="clicks">
+                <h1>{{ clicks }}</h1>
+                <h2>Click(s)</h2>
+            </div>
+        </div>
+        <footer>
+            Copyright &copy; 2020 Adam August
+        </footer>
+    </div>
+</body>
+</html>
