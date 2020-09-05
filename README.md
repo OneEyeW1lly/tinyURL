@@ -1,2 +1,0 @@
-# tinyURL
-Flask URL Shortener
