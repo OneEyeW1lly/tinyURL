@@ -1,5 +1,5 @@
 # tinyURL
-Flask URL Shortener
+tinyURL is the source code for a url-shortener site. tinyURL helps you take long ass amazon links and make them tiny
 
 ### Usage
 - install python3
